@@ -44,6 +44,12 @@ const db = getDatabase(app);
 
 set(ref(db, "teste"), {
   mensagem: "Olá Firebase!"
+})
+.then(() => {
+  console.log("Dados enviados para o Firebase!");
+})
+.catch((error) => {
+  console.error("Erro ao enviar:", error);
 });
 console.log("Firebase conectado!");
 </script>
