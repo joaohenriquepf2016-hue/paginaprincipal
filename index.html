@@ -242,6 +242,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
 import { getDatabase, ref, onValue, set, push, remove } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-database.js";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAyE5xVUwtUO4qSL5dWyErtwBNm2cniuOY",
   authDomain: "paginaprincipal-63fdc.firebaseapp.com",
@@ -249,7 +250,8 @@ const firebaseConfig = {
   projectId: "paginaprincipal-63fdc",
   storageBucket: "paginaprincipal-63fdc.firebasestorage.app",
   messagingSenderId: "573619157388",
-  appId: "1:573619157388:web:22fcd7fd14ff4d13e03ea9"
+  appId: "1:573619157388:web:22fcd7fd14ff4d13e03ea9",
+  measurementId: "G-5GMGK5YM0J"
 };
 
 const fireApp = initializeApp(firebaseConfig);
