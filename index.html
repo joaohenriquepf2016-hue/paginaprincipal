@@ -806,7 +806,7 @@ function saveToFirebase() {
 onValue(dataRef, (snapshot) => {
   const val = snapshot.val();
   if (val) {
-    appData = val;
+   appData = val.sections || {};
     renderCards();
   }
   updateStatus(true);
