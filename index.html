@@ -760,7 +760,14 @@ window.saveCard = function() {
   if (editingId) {
     const idx = appData[currentPage].cards.findIndex(c => c.id === editingId);
     if (idx >= 0) {
-      appData[currentPage].cards[idx] = { ...appData[currentPage].cards[idx], title, icon, image, imageLink, buttons };
+      appData[currentPage].cards[idx] = {
+  ...appData[currentPage].cards[idx],
+  title,
+  icon,
+  image,
+  imageLink,
+  buttons
+};
     }
   } else {
     const id = 'card_' + Date.now();
